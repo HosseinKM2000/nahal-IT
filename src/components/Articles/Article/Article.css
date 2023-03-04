@@ -1,0 +1,51 @@
+img[alt='comment']
+{
+    z-index: -1;
+    right: 22rem;
+    top: -2rem;
+}
+.rulls
+{
+    direction: rtl;
+}
+.rulls > li::marker
+{
+    content:url('../../../assets/img//play.png');
+    background-size: 1px;
+}
+.article-carsoule
+{
+    width: calc(33.333%);
+}
+.carsoule-parent
+{
+    width: 40rem;
+}
+.swiper-button-next::after
+{
+    content: 'next' !important;
+    font-size:  0.7rem !important;
+    color: #000000;
+    background-color: rgb(200, 200, 200);
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+.swiper-button-prev::after
+{
+    content: 'prev' !important;
+    font-size:  0.7rem !important;
+    color: #000000;
+    background-color: rgb(200, 200, 200);
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+.btn-telegram:hover
+{
+    color: #009dff;
+    background-color: #fff;
+}
+#answer:hover
+{
+    color: #fff;
+    background-color: #2eafff;
+}
