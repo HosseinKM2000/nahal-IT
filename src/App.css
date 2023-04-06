@@ -24,3 +24,106 @@ h1,h2,h3,h4,h5,h6
 {
     font-family:IranSans-b ;
 }
+::-webkit-scrollbar
+{
+  width: 0.6rem;
+}
+::-webkit-scrollbar-track
+{
+    background-color: rgb(229, 229, 229);
+}
+::-webkit-scrollbar-button
+{
+    display: none;
+}
+::-webkit-scrollbar-thumb
+{
+    background-color: rgb(174, 174, 174);
+}
+
+@media(max-width:640px)
+{
+    .end-box
+    {
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .end-box > img
+    {
+        width: 80rem;
+    }
+    .end-box > div
+    {
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .end-box > div > span
+    {
+        font-size: 1rem;
+        line-height: 2.5rem;
+    }
+    .end-box > div > button
+    {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    } 
+}
+
+@media(min-width:1536px)
+{
+    .end-box
+    {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .end-box > img
+    {
+        width: 80rem;
+    }
+    .end-box > div
+    {
+        align-items: center;
+    }
+    .end-box > div > span
+    {
+        font-size: 3rem;
+        line-height: 6rem;
+    }
+    .end-box > div > button
+    {
+        font-size: 2.5rem;
+        line-height: 1.25rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        width: 70%;
+    } 
+    .span
+    {
+        line-height: 4rem;
+        font-size: 2.5rem;
+    }
+    .Toast_info
+    {
+        width: 40% !important;
+        font-size: 3rem !important;
+        padding: 2rem !important;
+    }
+    .Toastify__toast
+    {
+        padding: 3rem !important;
+        gap: 3rem !important;
+    }
+    .Toastify__close-button
+    {
+        transform: scale(4) !important;
+    }
+    .Toastify--animate-icon
+    {
+        transform: scale(4) !important;
+    }
+}
+

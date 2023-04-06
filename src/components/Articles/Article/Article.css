@@ -23,7 +23,7 @@ img[alt='comment']
 }
 .swiper-button-next::after
 {
-    content: 'next' !important;
+    content: 'prev' !important;
     font-size:  0.7rem !important;
     color: #000000;
     background-color: rgb(200, 200, 200);
@@ -32,7 +32,7 @@ img[alt='comment']
 }
 .swiper-button-prev::after
 {
-    content: 'prev' !important;
+    content: 'next' !important;
     font-size:  0.7rem !important;
     color: #000000;
     background-color: rgb(200, 200, 200);
@@ -44,8 +44,81 @@ img[alt='comment']
     color: #009dff;
     background-color: #fff;
 }
-#answer:hover
+
+@media (max-width:425px)
 {
-    color: #fff;
-    background-color: #2eafff;
+    .carsoule-parent
+    {
+        width: 15rem;
+    }
+    img[alt='comment']
+    {
+        top: 3rem;
+        right: 0rem;
+        width: 20rem;
+    }
+}
+
+
+@media(min-width:1536px)
+{
+    .article-text
+    {
+        font-size: 2rem;
+        line-height: 5rem;
+    }
+    img[alt='comment']
+    {
+        right: 60rem;
+        top: -6rem;
+        width: 50rem;
+    }
+    img[alt='postIMg']
+    {
+        width: 40rem;
+        height: 40rem;
+    }
+    .carsoule-parent
+    {
+        width: 100rem;
+    }
+    .suggest-title
+    {
+        font-size: 2rem !important;
+        color: #464646;
+        line-height: 4rem;
+    }
+    .suggest-text
+    {
+        line-height: 3rem;
+        height: 20rem;
+    }
+    .swiper-button-next::after
+    {
+        font-size:  4rem !important;
+        margin-left: 5rem;
+        padding: 1rem;
+    }
+    .swiper-button-prev::after
+    {
+        font-size:  4rem !important;
+        margin-right: 5rem;
+        padding: 1rem;
+    }
+    .rulls > li::marker
+    {
+        content: none;
+    }
+    .tagsIcon
+    {
+        transform: scale(5);
+    }
+    .documentImg
+    {
+        transform: scale(5);
+    }
+    .linkImg
+    {
+        transform: scale(4);
+    }
 }

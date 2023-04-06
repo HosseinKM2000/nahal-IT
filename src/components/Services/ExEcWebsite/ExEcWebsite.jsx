@@ -17,8 +17,8 @@ function ExEcWebsite() {
 
   return (
     <div className='flex flex-col gap-7 ExEcWebsite-content mb-10 mt-2'>
+        <img src={headImg} alt="headImg" className='w-full max-sm:h-80'/>
         <div className='px-1 flex justify-center items-center'>
-          <img src={headImg} alt="headImg" className='w-full'/>
         </div>
         <motion.div className='flex flex-col'
         initial={{opacity:0}}
@@ -27,7 +27,7 @@ function ExEcWebsite() {
         viewport={{once:true}}
         >
             <h1 className='text-green-15 text-center'>فروش سایت اختصاصی و اقتصادی</h1>
-          <p className='text-center px-3 text-gray-66 leading-8 font-extralight'>در این بخش از خدمات، سایت های آماده فروشگاهی و سازمانی و شرکتی و مدیریتی و اداری و خبری و اختصاصی، آماده به فروش می باشد که با زبان ها و فریم ورک های مختلف مانند جنگو و لاراول و وردپرس و php ارائه می شود.</p>
+          <p className='text-center px-3 text-gray-66 leading-8 font-extralight max-sm:text-center'>در این بخش از خدمات، سایت های آماده فروشگاهی و سازمانی و شرکتی و مدیریتی و اداری و خبری و اختصاصی، آماده به فروش می باشد که با زبان ها و فریم ورک های مختلف مانند جنگو و لاراول و وردپرس و php ارائه می شود.</p>
         </motion.div>
         <div className='flex flex-col mb-10'>
           <motion.h1 className='text-gray-66 text-center '
@@ -41,7 +41,7 @@ function ExEcWebsite() {
           <motion.p initial={{opacity:0}} viewport={{once:true}}  whileInView={{opacity:1}} transition={{duration:1}}>امروزه عمر کسب‌و‌کارهایی که فاقد وب‌سایت هستند رو به پایان است، از این رو برای هدف‌گیری مشتریان راهی جز طراحی سایت اختصاصی و یا خرید قالب های متناسب با کسب و کار خود با رابط کاربری مناسب، ندارید و این دقیقا کاری است که تیم نهال آی تی برای شما به بهترین نحو ممکن انجام خواهد داد.</motion.p>
          <motion.p initial={{opacity:0}} viewport={{once:true}}  whileInView={{opacity:1}} transition={{duration:1.2}}>در این بخش از خدمات، فروشگاه های اینترنتی، سایت های آماده سازمانی و شرکتی و مدیریتی و اداری و دولتی و خبری و اختصاصی، آماده به فروش می باشد که با زبان ها و فریم ورک های مختلف برنامه نویسی مانند جنگو و لاراول و وردپرس و php ارائه می شود که در ادامه به توضیح هر یک از این ها خواهیم پرداخت.</motion.p>
         </div>
-        <div className='flex flex-row'>
+        <div className='flex flex-col sm:flex-row justify-center items-center'>
           <motion.div className='flex flex-col'
           initial={{translateX:100}}
           whileInView={{translateX:0}}
@@ -52,7 +52,7 @@ function ExEcWebsite() {
             <p>جنگو یک فریمورک وب مبتنی بر زبان برنامه نویسی پایتون و زبان سطح بالا می باشد که امکان طراحی سایت فروشگاهی و توسعه سریع وب سایت‌ های ایمن را فراهم می‌کند.</p>
             <p>جنگو توسط توسعه دهندگان باتجربه ساخته شده و از بسیاری از مشکلات هنگام تولید وب سایت پیشگیری می‌کند. این برنامه رایگان و منبع باز (Open Source) است، همچنین دارای یک انجمن پرکاربرد و فعال، مستندات عالی و گزینه‌های زیادی برای پشتیبانی رایگان و غیر رایگان می‌ باشد.</p>
           </motion.div>
-          <motion.img initial={{translateX:-50}} viewport={{once:true}} whileInView={{translateX:0}} transition={{duration:1}}  src={djangoImg} alt="django" className='w-80 '/>
+          <motion.img initial={{translateX:-50}} viewport={{once:true}} whileInView={{translateX:0}} transition={{duration:1}}  src={djangoImg} alt="django" className='w-80 2xl:w-10/12'/>
         </div>
         <motion.div
          initial={{translateY:-100,opacity:0}}
@@ -65,7 +65,7 @@ function ExEcWebsite() {
           <p>– یکی از مزیت های قابل توجه جنگو این است که حتی اگر پروژه از ابتدا تا انتها توسط یک تیم، توسعه پیدا کند، با استفاده از جنگو روند برنامه نویسی با سرعت قابل توجهی بالا می رود، از ایده تا انتشار تا راه اندازی و تولید، با استفاده از کدنویسی بسیار واضح  و تمیز، توسعه می تواند کارآمد و موثر باشد.</p>
           <p>– همه میدانیم که زمان = پول. به همین دلیل است که جنگو ” فریم ورکی برای افراد کمال گرا با مهلت های کاری محدود” محسوب می شود که همین موضوع اجازه می دهد تا هر توسعه دهنده به سرعت ساختار پروژه را درک کند و آنها به ابزارهایی نیاز دارند که هر ایده ای را پیاده سازی کنند و آن را به درستی توسعه دهند و درهمان زمان ضبط نمایند.</p>
         </motion.div>
-        <div className='flex flex-row justify-center'>
+        <div className='flex flex-col sm:flex-row justify-center items-center'>
           <motion.div className='flex flex-col'
           initial={{translateX:100, opacity:0}}
           whileInView={{translateX:0,opacity:1}}
@@ -77,7 +77,7 @@ function ExEcWebsite() {
             <p>اگر بخواهیم ریزتر به سوال PHP چیست؟ پاسخ دهیم، باید بگوییم که PHP کارهای پشت صحنه را در صفحات وب انجام میدهد. به این معنا که شما با استفاده از PHP نمیتوانید ظاهر سایت را تغییر دهید. PHP یک زبان برنامه</p>
             <p>نویسی است که تاثیر مستقیمی روی ظاهر سایت ندارد. با استفاده از PHP شما میتوانید اطلاعات مختلف را از پایگاه داده بگیرید و به کاربر نشان دهید.</p>
           </motion.div>
-          <motion.img initial={{translateX:500, opacity:0}} viewport={{once:true}}  whileInView={{translateX:0,opacity:1}} transition={{duration:1}} src={phpImg} alt="php" className='w-80 mr-2 h-52'/>
+          <motion.img initial={{translateX:500, opacity:0}} viewport={{once:true}}  whileInView={{translateX:0,opacity:1}} transition={{duration:1}} src={phpImg} alt="php" className='w-80 mr-2 h-52 2xl:w-10/12 2xl:h-96'/>
         </div>
         <motion.div initial={{translateX:0,opacity:1}} viewport={{once:true}} transition={{duration:1}} whileInView={{translateX:[5,-5,5,-5,5,-5,5,-5,0],opacity:1}} >
           <h1 className='text-green-00'>داینامیک و استاتیک یعنی چی؟</h1>
@@ -89,13 +89,13 @@ function ExEcWebsite() {
           <p>روش اول، یعنی زمانی که شما بصورت دستی اقدام به نوشتن اخبار در صفحات وب خود میکنید را روش Static میگویند و اصطلاحا میگویند که آن صفحه‌ی شما، یک صفحه‌ی وب استاتیک یا Static Web Page است.</p>
           <p>اما وقتی که شما اطلاعات و کلا محتویات صفحه را از یک پایگاه داده میخوانید و به کاربران نشان میدهید، آن صفحه‌ی وب شما به یک صفحه‌ی وب داینامیک یا Dynamic Web Page تبدیل میشود.</p>
         </motion.div>
-        <div className='flex flex-row'>
+        <div className='flex flex-col sm:flex-row justify-center items-center'>
           <div>
             <motion.h1 className='text-green-0E' initial={{translateY:-20,opacity:0}} viewport={{once:true}} whileInView={{translateY:0,opacity:1}} transition={{duration:1,delay:0.5}}>فریمورک لاراول چیست ؟</motion.h1>
             <p>زبان برنامه نویسی PHP یکی از برترین و محبوب‌ترین زبان‌های برنامه ‌نویسی در حوزه طراحی وب است. این زبان برنامه نویسی Framework ‌های بسیار زیادی دارد که لاراول یکی از آن‌ها است.</p>
             <p>زمانی که در مورد فریم ورک‌های توسعه وب اپلیکیشن صحبت می‌شود، همیشه نام لاراول به میان می‌آید. از لاراول می‌توان به عنوان محبوب‌ترین فریم ورک زبان برنامه نویسی PHP یاد کرد. این فریم ورک توانسته است در زمانی کوتاه، به اولین گزینه‌ی توسعه دهندگان برای توسعه برنامه‌های پیچیده تحت وب تبدیل شود.</p>
           </div>
-          <motion.img initial={{translateY:200,opacity:0}} viewport={{once:true}} whileInView={{translateY:0,opacity:1}} transition={{duration:1}} src={laravelImg} alt="laravel" className='w-80' />
+          <motion.img initial={{translateY:200,opacity:0}} viewport={{once:true}} whileInView={{translateY:0,opacity:1}} transition={{duration:1}} src={laravelImg} alt="laravel" className='w-80 2xl:w-10/12'/>
         </div>
         <div>
           <p>لاراول فریم ورکی مبتنی بر معماری MVC است که به صورت رایگان و متن باز ارائه شده است. این فریم‌ ورک امکانات هوشمندی در اختیار برنامه نویسان قرار می‌دهد و برنامه‌‌ نویسی را برای آن‌ها لذت بخش‌تر می‌کند. </p>
@@ -108,30 +108,30 @@ function ExEcWebsite() {
           <p>رابط کاربری : برجسته ترین ویژگی لاراول، رابط و محیط کاربری راحت آن است. این رابط کاربری به‌علاوه امکاناتی که در اختیار شما قرار می‌دهد، تاثیر بسزایی بر سهولت و سرعت انجام امور دارد.حال که با مفهوم تاثیر استفاده از فریم ورک laravel بر سرعت پروژه آشنا شدید در امتداد مقاله به بررسی مزیت استفاده از لارول می پردازیم.</p>
           <p>تمام ویژگی های گفته شده باعث افزایش سرعت پروژه با لاراول می شود.</p>
         </div>
-        <div className='flex flex-row mt-20'>
+        <div className='flex mt-20 flex-col sm:flex-row justify-center items-center'>
           <div>
             <motion.h1 initial={{translateX:100,opacity:0}} viewport={{once:true}} whileInView={{translateX:0,opacity:1}} className='text-green-0E'>وردپرس چیست ؟</motion.h1>
             <motion.p initial={{scale:0}} viewport={{once:true}} transition={{duration:1}} whileInView={{scale:1}}>اگر بخواهیم به زبان ساده به معرفی وردپرس بپردازیم، وردپرس عبارت است از یک سیستم مدیریت محتوای سایت ساز که با استفاده از آن قادر خواهید بود تا به راه اندازی انواع گوناگونی از وبسایت و وبلاگ بپردازید. با اطمینان بر اساس تجربیات شخصی و نمونه های  مشاهده شده به جرأت می توانم این اطمینان را به شما بدهم به دلیل انعطاف بالایی که سیستم مدیریت محتوای وردپرس دارد با استفاده از آن قادر خواهید بود تا اقدام به راه اندازی هر نوع وبسایت با وردپرس کنید.</motion.p>
           </div>
-          <motion.img initial={{translateY:-200}} viewport={{once:true}} transition={{duration:1}} whileInView={{translateY:0}} src={wordpressImg} alt="wordpress" className='w-80'/>
+          <motion.img initial={{translateY:-200}} viewport={{once:true}} transition={{duration:1}} whileInView={{translateY:0}} src={wordpressImg} alt="wordpress" className='w-80 2xl:w-10/12'/>
         </div>
         <div>
           <motion.p initial={{translateY:100}} viewport={{once:true}} transition={{duration:1}} whileInView={{translateY:0}}>وردپرس، یک سیستم سایت ساز و پکیج راه انداز وب‌سایت، فروشگاه اینترنتی و وبلاگ (از هر نوع و هر مدل است) است که به صورت رایگان شما می‌توانید آن را از طریق وب‌سایت رسمی وردپرس (فارسی یا انگلیسی) دانلود کرده و بر روی فضای اینترنتی خود نصب کنید. فضای اینترنتی همان فضایی است که سایت شما و محتویات آن بر روی آن فضا قرار می‌گیرد و سپس وب‌سایت خود را به طور کامل با جزئیات و امکانات متفاوت و طرح دلخواه بر روی آن راه اندازی کرده و مطالب و بخش‌های مختلف سایت را خودتان مدیریت کنید.</motion.p>
         </div>
         <div className='flex flex-col w-full'>
-        <motion.div initial={{translateY:200,opacity:0}} viewport={{once:true}} transition={{duration:1}} whileInView={{translateY:0,opacity:1}} className='bg-blue-db py-10 px-3 flex flex-row items-center justify-around'>
-          <img src={storeImg} alt="store" className='w-60'/>
-          <div className='w-8/12 flex flex-col items-center gap-5'>
+        <motion.div initial={{translateY:200,opacity:0}} viewport={{once:true}} transition={{duration:1}} whileInView={{translateY:0,opacity:1}} className='bg-blue-db py-10 px-3 flex flex-col sm:flex-row items-center justify-around'>
+          <img src={storeImg} alt="store" className='w-60 2xl:w-1/4'/>
+          <div className='w-8/12 flex flex-col items-center gap-5 2xl:gap-32'>
             <p className='store-text'>
            جهت مشاهده ی تمامی قالب های آماده به فروش (وردپرس (WordPress) و HTML و CSS و قالب جنگو (DJango)) و ثبت سفارش ، می توانید از طریق لینک زیر اقدام کنید.</p>
-          <button className='text-white bg-green-57C  w-full py-2 rounded-md hover:brightness-105 transition-all'>مشاهده انواع قالب ها و ثبت سفارش</button>
+          <button className='text-white bg-green-57C  w-72 2xl:text-5xl 2xl:p-8 2xl:w-3/4 sm:w-full py-2 rounded-md hover:brightness-105 transition-all'>مشاهده انواع قالب ها و ثبت سفارش</button>
           </div>
         </motion.div>
-        <motion.div initial={{translateY:200,opacity:0}} viewport={{once:true}} transition={{duration:1,delay:0.1}} whileInView={{translateY:0,opacity:1}} className='bg-green-72 py-10 px-3 flex flex-row items-center justify-around'>
-          <img src={serviceImg} alt="Service" className='w-80'/>
-          <div className='w-8/12 flex flex-col items-center gap-5'>
+        <motion.div initial={{translateY:200,opacity:0}} viewport={{once:true}} transition={{duration:1,delay:0.1}} whileInView={{translateY:0,opacity:1}} className='bg-green-72 py-10 px-3 flex flex-col sm:flex-row-reverse items-center justify-around'>
+          <img src={serviceImg} alt="Service" className='w-80 2xl:w-1/4'/>
+          <div className='w-8/12 flex flex-col items-center gap-5 2xl:gap-32'>
             <p className='service-text'>برای مشاهده و سفارش قالب ها و سایت های آماده ی طراحی شده توسط تیم نهال آی تی از طریق لینک زیر اقدام کنید</p>
-            <button className='text-white bg-green-57C w-full py-2 rounded-md hover:brightness-105 transition-all'>مشاهده وب سایت و قالب های آماده</button>
+            <button className='text-white bg-green-57C sm:w-full 2xl:text-5xl 2xl:p-8 2xl:w-3/4 w-72 py-2 rounded-md hover:brightness-105 transition-all'>مشاهده وب سایت و قالب های آماده</button>
           </div>
         </motion.div>
         </div>

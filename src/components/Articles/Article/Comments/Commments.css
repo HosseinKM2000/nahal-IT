@@ -3,3 +3,11 @@
     color: #fff;
     background-color: #2eafff;
 }
+
+@media (min-width:1536px) 
+{
+    #checkbox
+    {
+        transform: scale(3);
+    }    
+}

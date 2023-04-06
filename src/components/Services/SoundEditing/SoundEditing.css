@@ -1,13 +1,8 @@
-.soundEditing-content > div > h1,h2,h3,h4,h5,h6
+.soundEditing-content > div > h1,h2,h3,h4,h5,h6,
+.soundEditing-content > div > div > h1,h2,h3,h4,h5,h6,
+.soundEditing-content > div > div > div > h1,h2,h3,h4,h5,h6
 {
     font-weight: bolder;
-    font-size: 1.9rem;
-    margin-bottom: 1rem;
-}
-.soundEditing-content > div > div > h1,h2,h3,h4,h5,h6
-{
-    font-weight: bolder;
-    font-size: 1.9rem;
     margin-bottom: 1rem;
 }
 .soundEditing-content > div
@@ -15,30 +10,13 @@
     margin-right: 0.5rem;
     margin-left: 0.5rem;
 }
-.soundEditing-content > div > p
-{
-    font-size:0.9rem;
-    color: #636363;
-    line-height: 2.1rem;
-} 
-.soundEditing-content > div > div > p
-{
-    font-size:0.9rem;
-    color: #636363;
-    line-height: 2.1rem;
-} 
+.soundEditing-content > div > p,
+.soundEditing-content > div > div > p,
 .soundEditing-content > div > div > div > p
 {
-    font-size:0.9rem;
     color: #636363;
     line-height: 2.1rem;
-}
-.soundEditing-content > div > div > div > h1,h2,h3,h4,h5,h6
-{
-    font-weight: bolder;
-    font-size: 1.9rem;
-    margin-bottom: 1rem;
-}
+} 
 .soundEditing-content
 {
     direction: rtl;
@@ -69,4 +47,75 @@ li
     font-size:0.9rem;
     color: #767676;
     line-height: 2.1rem;
+}
+/* media query */
+
+@media (max-width:640px)
+{
+    .soundEditing-content > div > h1,h2,h3,h4,h5,h6,
+    .soundEditing-content > div > div > h1,h2,h3,h4,h5,h6,
+    .soundEditing-content > div > div > div > h1,h2,h3,h4,h5,h6
+    {
+        text-align: center;
+        font-size: 1.2rem !important;
+    }
+    .soundEditing-content > div > p,
+    .soundEditing-content > div > div > p,
+    .soundEditing-content > div > div > div > p
+    {
+        text-align: center;
+        line-height: 2rem;
+        font-size: 0.9rem;
+    }
+    b
+    {
+        text-align: center;
+    }
+    .sound-editing-Services > div
+    {
+        width: 100%;
+    }
+}
+
+@media (min-width:640px)
+{
+    .soundEditing-content > div > h1,h2,h3,h4,h5,h6,
+    .soundEditing-content > div > div > h1,h2,h3,h4,h5,h6,
+    .soundEditing-content > div > div > div > h1,h2,h3,h4,h5,h6
+    {
+        font-size: 1.9rem;
+    }
+    .soundEditing-content > div > p,
+    .soundEditing-content > div > div > p,
+    .soundEditing-content > div > div > div > p
+    {
+        text-align: right;
+        font-size:0.9rem;
+        line-height: 2.1rem;
+    }
+}
+
+
+@media (min-width:1536px)
+{
+    .soundEditing-content > div > h1,h2,h3,h4,h5,h6,
+    .soundEditing-content > div > div > h1,h2,h3,h4,h5,h6,
+    .soundEditing-content > div > div > div > h1,h2,h3,h4,h5,h6
+    {
+        text-align: right;
+        font-size: 4rem !important;
+    }
+    .soundEditing-content > div > p,
+    .soundEditing-content > div > div > p,
+    .soundEditing-content > div > div > div > p
+    {
+        text-align: right;
+        line-height: 6rem;
+        font-size: 2.5rem;
+    } 
+    .sound-editing-Services  > div > span
+    {
+        font-size: 2.5rem;
+        line-height: 6rem;
+    }
 }

@@ -49,7 +49,7 @@ module.exports = {
       'gray-4444' : '#444444',
       'gray-bbbb' : '#bbbbbb',
       'gray-b1b1' : '#b1b1b1;'
-    }
+    },
   },
   plugins: [],
 }

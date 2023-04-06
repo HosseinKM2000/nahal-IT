@@ -22,9 +22,9 @@ import front_1 from '../../../assets/img/frm-thbt-sfarsh-transformed-min.png';
 
 function SocalMedia() {
   return (
-    <div className='SocalMedia flex flex-col items-center gap-10 mb-10 mt-2'>
-        <div className='flex flex-col gap-10 px-1'>
-            <img src={HeadImg} alt="header" className='w-full'/>
+    <div className='SocalMedia flex flex-col items-center gap-10 2xl:gap-20 mb-10 mt-2'>
+        <img src={HeadImg} alt="header" className='w-full sm:h-auto h-96'/>
+        <div className='flex flex-col gap-10 2xl:gap-20 px-1'>
             <div>
                 <h1 className='text-center text-green-137'>خدمات شبکه های اجتماعی</h1>
                 <p>امروزه داشتن یک وب سایت به تنهایی پاسخ گوی بازار رقابتی نیست، بازاریابی رسانه‌ های اجتماعی یکی از ابزارهای ارزشمند برای ایجاد یک فضا بین جامعه و درگیر شدن با مشتریان خود است.</p>
@@ -34,8 +34,8 @@ function SocalMedia() {
                 <p>تیم نهال آی تی ، بستری مناسب برای افزایش بازدید، لایک، فالوور و سایر خدمات شبکه های اجتماعی فراهم آورده است. پس از ایجاد کمپین، اکانت و یا پست شما برای بسیاری از کاربران ارسال شده و خدمت موردنظر بلافاصله برای شما اعمال می شود.</p>
             </div>
             <motion.div whileInView={{y:[-300,0],opacity:[0,1]}} transition={{duration:1}} viewport={{once:true}} className='flex flex-col bg-weak-pink px-3 py-5'>
-                <b className='mb-10'>اهمیت شبکه های اجتماعی برای کسب و کارتان :</b>
-                <div className='flex flex-col gap-2 font-base text-gray-5E5E socalmedia-importance'>
+                <b className='mb-10 2xl:text-4xl'>اهمیت شبکه های اجتماعی برای کسب و کارتان :</b>
+                <div className='flex flex-col span gap-2 2xl:gap-5 font-base text-gray-5E5E socalmedia-importance'>
                   <span>1- بررسی فعالیت رقبا و سنجش فعالیت خود با آن ها</span>
                   <span>2- پیشرفت بازار و بدست آوردن مشتری ‌های هدف</span>
                   <span>3- توسعه ارتباط با مشتری و افزایش سرعت در پاسخگویی</span>
@@ -45,14 +45,14 @@ function SocalMedia() {
                   <span>7- آمارگیری و بررسی میزان پیشرفت</span>
                 </div>
             </motion.div>
-            <div className='flex flex-row'>
+            <div className='flex flex-col sm:flex-row items-center'>
                 <div>
                     <motion.h2  whileInView={{x:[-300,0],opacity:[0,1]}} transition={{duration:1,delay:0.5}} viewport={{once:true}} className='text-green-1c'>اینستاگرام چیست ؟</motion.h2>
                     <motion.p  whileInView={{y:[-300,0],opacity:[0,1]}} transition={{duration:1}} viewport={{once:true}}>اینستاگرام (Instagram) سرویسی برای اشتراک تصاویر و برقراری تعاملات اجتماعی است. کاربران عکس یا ویدئوهای کوتاه و یا بلند می‌گیرند و با دنبال‌کنندگان (Followers) خود به اشتراک می‌ گذارند.</motion.p>
                     <motion.p  whileInView={{y:[-300,0],opacity:[0,1]}} transition={{duration:1}} viewport={{once:true}}>برخلاف فیس بوک و توییتر که بیش تر بر پایه محتوای متنی بنا شده اند، اینستاگرام با اولویت عکس و فیلم و محتوای تصویری فعالیت می‌ کند. ولی با این حال امکان قرار دادن محتوای متنی نیز در قسمت کپشن پست ها و هچنین استوری ها وجود دارد.</motion.p>
                     <motion.p  whileInView={{y:[-300,0],opacity:[0,1]}} transition={{duration:1}} viewport={{once:true}}>اگر بخواهیم یک تعریف به زبان عامیانه از اینستاگرام ارائه دهیم، می‌ توان گفت این شبکه اجتماعی محبوب، برای انجام فعالیت های گوناگون از فعالیت های سیاسی و اجتماعی تا تفریحی و یا ایجاد یک کسب و کار موفق ، محل بسیار مناسبی است.</motion.p>
                 </div>
-                <motion.img src={SocalMarcet} alt="socalmedia" className='w-80'  whileInView={{x:[-700,0],opacity:[0,1]}} transition={{duration:1,delay:0.5}} viewport={{once:true}}/>
+                <motion.img src={SocalMarcet} alt="socalmedia" className='w-80 2xl:w-2/6'  whileInView={{x:[-700,0],opacity:[0,1]}} transition={{duration:1,delay:0.5}} viewport={{once:true}}/>
             </div>
             <motion.div whileInView={{opacity:[0,1]}} transition={{duration:1}} viewport={{once:true}}>
                 <p>سال 2010 همان سالی است که در آن معجزه ای به نام اینستاگرام توسط کوین سیستروم و مایک کرایگر ساخته و منتشر شد. برنامه ای که در طی مدت کوتاهی توانست افراد زیادی را به خود جذب کند و تبدیل به یک شبکه ی اجتماعی بسیار پرطرفدار شود.</p>
@@ -60,8 +60,8 @@ function SocalMedia() {
                 <p>یکی از دلایل محبوبیت اینستاگرام این است که در این شبکه اجتماعی شما می توانید به هر چیزی که علاقه دارید و یا قصد راه اندازی کسب و کاری را دارید برسید.</p>
                 <p>قابلیت ها و امکانات اینستاگرام برای کاربران قرار داده است بسیار زیاد و متنوع بوده و همین یکی از دلایل محبوب بودن و پرکاربردی بودن این اپلیکیشن می باشد. شما می توانید در اینستاگرام تمامی خوانندگان یا بازیگران و یا چیزهای مورد علاقه تان را دنبال کنید و از اخبار روز دنیا خبر دار باشید.</p>
             </motion.div>
-            <div className='flex-row flex'>
-                <motion.img src={telegram} alt="telegram" className='w-80' whileInView={{x:[300,0], opacity:[0,1]}} transition={{duration:1}} viewport={{once:true}}/>
+            <div className='flex flex-col gap-5 sm:gap-0 sm:flex-row items-center'>
+                <motion.img src={telegram} alt="telegram" className='w-40 sm:w-80 2xl:w-1/4' whileInView={{x:[300,0], opacity:[0,1]}} transition={{duration:1}} viewport={{once:true}}/>
                 <div>
                     <motion.h3 className='text-green-1c' whileInView={{opacity:[0,1]}} transition={{duration:1}} viewport={{once:true}}>تلگرام چیست ؟</motion.h3>
                     <motion.p whileInView={{opacity:[0,1],scale:[0,1]}} transition={{duration:2}} viewport={{once:true}}>در میان انبوه اپلیکیشن های پیام رسانی که این روزها در موبایل ها می بینیم، شکی نیست که تلگرام یکی از محبوب ترین آنهاست. این اپلیکیشن که توسط دو برادر برنامه نویس روس طراحی شده است.</motion.p>
@@ -75,16 +75,16 @@ function SocalMedia() {
                 <p>سرعت عملکرد تلگرام بسیار بالاست و تیم توسعه دهنده آن به شدت در تلاش هستند تا عملکرد آن را بهبود بخشند. از اینرو هر روز قابلیت‌ های جدیدی به این برنامه اضافه می‌ شود. تلگرام امکان ساخت ربات و تعامل با سایر برنامه‌ ها نظیر اینستاگرام را از طریق دستورات IFTT فراهم می‌کند.</p>
                 <p>تلگرام همچنین به صورت تحت وب قابل اجراست. این موضوع به آن معناست که شما می‌ توانید تلگرام را از طریق مرورگر و بدون نیاز به نصب هیچ برنامه یا اپلیکیشن جانبی در کامپیوتر، لپ‌تاپ و غیره اجرا کنید.</p>
             </motion.div>
-            <div className='flex flex-row'>
+            <div className='flex flex-col-reverse sm:flex-row items-center'>
                 <div>
                     <motion.h5 className='text-green-1c' whileInView={{opacity:[0,1],x:[300,0]}} transition={{duration:1}} viewport={{once:true}}>لینکدین چیست ؟</motion.h5>
                     <motion.p whileInView={{opacity:[0,1],x:[1000,0]}} transition={{duration:2}} viewport={{once:true}}>لینکدین در واقع یک شبکه اجتماعی حرفه ای است که اساسا برای بهبود کسب و کارهای مختلف و آشنا کردن دیگران با آن ها طراحی شده است. با این حال، استفاده از لینکدین تنها به این موضوع محدود نمی شود و کاربران این شبکه اجتماعی می توانند از طریق آن، با افراد دیگری که در حوزه کاری شان فعالیت می کنند، آشنا شوند و با آن ها ارتباط برقرار کنند.</motion.p>
                     <motion.p whileInView={{opacity:[0,1],x:[1000,0]}} transition={{duration:2}} viewport={{once:true}}>همچنین می توان از این سیستم برای پیدا کردن کار یا استخدام افراد نیز استفاده کرد. این موضوع چندان مسئله عجیبی نیست؛ کافیست سری به صفحات اشخاص یا شرکت های مختف بزنید تا از این مسئله با خبر شوید. علاوه بر این، محدود به داشتن یک حساب کاربری نیستید و می توانید با در اختیار داشتن چند اکانت مختلف، استفاده های متعددی از لینکدین داشته باشید. کار کردن با این پلفترم نیز بسیار راحت تر از چیزیست که فکرش را می کنید.</motion.p>
                 </div>
-                <motion.img src={linkedin} alt="linkedin" className='w-80 h-60' whileInView={{opacity:[0,1,0,1,0,1]}} transition={{duration:2}} viewport={{once:true}}/>
+                <motion.img src={linkedin} alt="linkedin" className='w-80 h-60 2xl:h-96 2xl:w-1/4 linking-img' whileInView={{opacity:[0,1,0,1,0,1]}} transition={{duration:2}} viewport={{once:true}}/>
             </div>
-            <div className='flex flex-row'>
-                <motion.img src={twitter} alt="twitter" className='w-80' whileInView={{opacity:[0,1],scale:[0,1],rotate:[270,0]}} transition={{duration:2}} viewport={{once:true}}/>
+            <div className='flex flex-col sm:flex-row items-center'>
+                <motion.img src={twitter} alt="twitter" className='w-80 2xl:h-3/4 2xl:w-1/4' whileInView={{opacity:[0,1],scale:[0,1],rotate:[270,0]}} transition={{duration:2}} viewport={{once:true}}/>
                 <motion.div whileInView={{opacity:[0,1],x:[-1000,0]}} transition={{duration:1}} viewport={{once:true}}>
                     <h6 className='text-green-1c'>توییتر چیست ؟</h6>
                     <p>توییتر یک سرویس میکروبلاگینگ است. یعنی در شبکه اجتماعی توییتر، وبلاگ نویسی در 280 کارکتر یا حرف فراهم شده است. این یعنی می توان خبر، دیدگاه یا جملات خود را با جملات کوتاه به مخاطبان منتقل کرد.</p>
@@ -92,26 +92,26 @@ function SocalMedia() {
                     <p>داشتن بازدید ویدیو، لایک و کامنت بالا و همچنین فالوور های معتبر، از جمله مواردی است که در الگوریتم توئیتر تاثیرگذار بوده و نهال آی تی نیز این خدمت را در اختیار شما قرار می دهد.</p>
                 </motion.div>
             </div>
-            <div className='flex flex-row'>
+            <div className='flex flex-col-reverse gap-5 sm:gap-0 sm:flex-row items-center'>
                 <motion.div whileInView={{opacity:[0,1],x:[1000,0]}} transition={{duration:1}} viewport={{once:true}}>
                     <h6 className='text-green-1c'>فیسبوک چیست ؟</h6>
                     <p>یس بوک (facebook) اگر چه در میان شبکه های اجتماعی قدیمی ترین نیست، اما بی شک مطرح ترین است. در نیمه سال 2018 تعداد کاربران فعال فیس بوک از 1/7 میلیارد نفر گذشت و در فصل سوم سال 2018، تعداد کاربران فعال ماهانه فیسبوک، 2/27 میلیارد نفر اعلام شد.</p>
                     <p>فعالیت در فیسبوک از سال های دور بین کاربران ایرانی رواج داشته و از این شبکه اجتماعی برای تبادل اطلاعات، اشتراک گذاری عکس و ویدیو و مواردی از این دست استفاده می شود.</p>
                     <p>داشتن بازدید و لایک بالا در فیسبوک، می تواند برای افرادی که در این شبکه اجتماعی فعال هستند، جزو مواردی باشد که اعتبار پیج را افزایش می دهد. همچنین به دلیل اهمیت بالای فیسبوک برای گوگل و سایر شبکه های اجتماعی، داشتن سیگنال بالا از این شبکه اجتماعی می تواند برای سئوی سایت نیز موثر باشد.</p>
                 </motion.div>
-                <motion.img src={faceBook} alt="faceBook"  className='w-80' whileInView={{opacity:[0,1],x:[-700,0]}} transition={{duration:2}} viewport={{once:true}}/>
+                <motion.img src={faceBook} alt="faceBook"  className='w-40 sm:w-80 2xl:h-3/4 2xl:w-1/4' whileInView={{opacity:[0,1],x:[-700,0]}} transition={{duration:2}} viewport={{once:true}}/>
             </div>
-            <div className='flex flex-row'>
+            <div className='flex flex-col-reverse gap-5 sm:gap-0 sm:flex-row items-center'>
                 <div>
                     <h6 className='text-green-1c'>آپارات چیست ؟</h6>
                     <motion.p whileInView={{opacity:[0,1,0,1,0,1]}} transition={{duration:2}} viewport={{once:true}}>امروزه با گسترش دنیای وب، سایت هایی مانند وب سایت آپارات به عنوان معتبرترین و بزرگترین سایت ایران که بهترین رتبه الکسا را در بین سایت های ایرانی دارد، بستری مناسب را با رابط کاربری جذاب در اختیار همه افراد قرار داده تا به راحتی بتوانند ویدیوی خود را آپلود کرده و کسب و کار خود را تبلیغ کنند.</motion.p>
                     <motion.p whileInView={{opacity:[0,1,0,1,0,1]}} transition={{duration:2}} viewport={{once:true}}>هر چه ویدیوهای یک کاربر از بازدید بالاتری برخوردار باشد، اعتبار بیشتری نزد کاربران و بازدیدکنندگان یافته و تاثیر بیشتری در ذهن آنان می گذارد.</motion.p>
                     <motion.p whileInView={{opacity:[0,1,0,1,0,1]}} transition={{duration:2}} viewport={{once:true}}>ضمنا به دلیل اینکه سایت آپارات از سئو و ارزش دامنه بالایی برخوردار است، امکان بهبود جایگاه ویدیوی شما در نتایج گوگل نیز وجود دارد.</motion.p>
                 </div>
-                <motion.img src={aparat} alt="aparat"  className='w-80' whileInView={{opacity:[0,1],y:[300,0]}} transition={{duration:2}} viewport={{once:true}}/>
+                <motion.img src={aparat} alt="aparat"  className='w-40 sm:w-80 2xl:h-3/4 2xl:w-1/4' whileInView={{opacity:[0,1],y:[300,0]}} transition={{duration:2}} viewport={{once:true}}/>
             </div>
-            <div className='flex flex-row items-center'>
-                <motion.img src={youtube} alt="youtube" className='w-80 h-48' whileInView={{opacity:[0,1],x:[700,0]}} transition={{duration:2}} viewport={{once:true}}/>
+            <div className='flex flex-col sm:flex-row items-center'>
+                <motion.img src={youtube} alt="youtube" className='w-80 h-48 2xl:h-3/4 2xl:w-1/4' whileInView={{opacity:[0,1],x:[700,0]}} transition={{duration:2}} viewport={{once:true}}/>
                 <div>
                     <h6 className='text-green-1c'>یوتیوب چیست ؟</h6>
                     <p>یوتیوب به عنوان یکی از زیرمجموعه های بزرگ کمپانی گوگل، معتبرترین سایت جهان در زمینه اشتراک ویدیو محسوب می شود و بسیاری از کاربران اینترنت از سراسر جهان، ویدیوهای خود را در آن به اشتراک گذاشته و از آن کسب درآمد می کنند. یکی از شروط لازم برای کسب درآمد از یوتیوب این است که ویدیوهای کانال شما حداقل 4 هزار ساعت بازدید داشته باشند.</p>
@@ -120,58 +120,58 @@ function SocalMedia() {
             </div>
             <div className='flex flex-col gap-3'>
                 <h6 className='text-center text-green-137'>خدمات شبکه های اجتماعی</h6>
-                <div className='flex flex-row flex-wrap gap-5 socalMedia-services justify-between'>
+                <div className='flex flex-col sm:flex-row items-center flex-wrap gap-5 socalMedia-services justify-between'>
                     <motion.div className='flex flex-col gap-3 items-center' whileInView={{x:[1000,0]}} transition={{duration:2}} viewport={{once:true}}>
-                        <img src={instagram} alt="instagram" className='w-20'/>
-                        <span>خدمات اینستاگرام</span>
-                        <p className='text-center'>اینستاگرام برای ایجاد یک کسب و کار موفق ، محل بسیار مناسبی است. ما در تیم نهال آی تی، تمامی خدمات مربوط به اینستاگرام را اعم از افزایش لایک و فالوور و بازدید پست ها را انجام میدهیم تا کسب و کار شما رونق پیدا کند.</p>
-                    </motion.div>
-                    <motion.div className='flex flex-col gap-3 items-center' whileInView={{x:[1000,0]}} transition={{duration:2}} viewport={{once:true}}>
-                        <img src={TelegramIcon} alt="Telegram" className='w-36'/>
-                        <span>خدمات تلگرام</span>
-                        <p>شکی نیست که تلگرام یکی از محبوب ترین اپلیکیشن ها می باشد. تلگرام ویژگی‌ های متعددی دارد که آن را از سایر اپلیکیشن‌ های پیام رسان متمایز می‌ کند. ما در این بستر به شما کمک میکنیم تا بتوانید کسب و کار خود را رونق دهید.</p>
+                        <img src={instagram} alt="instagram" className='w-20 2xl:w-48'/>
+                        <span className='2xl:text-5xl'>خدمات اینستاگرام</span>
+                        <p className='text-center span'>اینستاگرام برای ایجاد یک کسب و کار موفق ، محل بسیار مناسبی است. ما در تیم نهال آی تی، تمامی خدمات مربوط به اینستاگرام را اعم از افزایش لایک و فالوور و بازدید پست ها را انجام میدهیم تا کسب و کار شما رونق پیدا کند.</p>
                     </motion.div>
                     <motion.div className='flex flex-col gap-3 items-center' whileInView={{x:[1000,0]}} transition={{duration:2}} viewport={{once:true}}>
-                        <img src={LinkedinIcon} alt="linkedin" className='w-20'/>
-                        <span>خدمات لینکدین</span>
-                        <p>لینکدین در واقع یک شبکه اجتماعی است که اساسا برای بهبود کسب و کارهای مختلف طراحی شده است. ما در نهال آی تی به شما کمک میکنیم تا با افراد دیگری که در حوزه کاری تان فعالیت می کنند، آشنا شوید.</p>
+                        <img src={TelegramIcon} alt="Telegram" className='w-36 2xl:w-80'/>
+                        <span className='2xl:text-5xl'>خدمات تلگرام</span>
+                        <p className='span'>شکی نیست که تلگرام یکی از محبوب ترین اپلیکیشن ها می باشد. تلگرام ویژگی‌ های متعددی دارد که آن را از سایر اپلیکیشن‌ های پیام رسان متمایز می‌ کند. ما در این بستر به شما کمک میکنیم تا بتوانید کسب و کار خود را رونق دهید.</p>
+                    </motion.div>
+                    <motion.div className='flex flex-col gap-3 items-center' whileInView={{x:[1000,0]}} transition={{duration:2}} viewport={{once:true}}>
+                        <img src={LinkedinIcon} alt="linkedin" className='w-20 2xl:w-48'/>
+                        <span className='2xl:text-5xl'>خدمات لینکدین</span>
+                        <p className='span'>لینکدین در واقع یک شبکه اجتماعی است که اساسا برای بهبود کسب و کارهای مختلف طراحی شده است. ما در نهال آی تی به شما کمک میکنیم تا با افراد دیگری که در حوزه کاری تان فعالیت می کنند، آشنا شوید.</p>
                     </motion.div>
                     <motion.div className='flex flex-col gap-3 items-center' whileInView={{x:[1000,0]}} transition={{duration:2,delay:1}} viewport={{once:true}}>
-                        <img src={TwitterIcon} alt="twitter" className='w-20'/>
-                        <span>خدمات توییتر</span>
-                        <p>داشتن بازدید ویدیو، لایک و کامنت بالا و همچنین فالوور های معتبر، از جمله مواردی است که در الگوریتم توئیتر تاثیرگذار بوده و نهال آی تی نیز این خدمت را در اختیار شما قرار می دهد.</p>
+                        <img src={TwitterIcon} alt="twitter" className='w-20 2xl:w-48'/>
+                        <span className='2xl:text-5xl'>خدمات توییتر</span>
+                        <p className='span'>داشتن بازدید ویدیو، لایک و کامنت بالا و همچنین فالوور های معتبر، از جمله مواردی است که در الگوریتم توئیتر تاثیرگذار بوده و نهال آی تی نیز این خدمت را در اختیار شما قرار می دهد.</p>
                     </motion.div>
                     <motion.div className='flex flex-col gap-3 items-center' whileInView={{x:[1000,0]}} transition={{duration:2,delay:1}} viewport={{once:true}}>
-                        <img src={FaceBookLogo} alt="faceBook" className='w-20'/>
-                        <span>خدمات فیسبوک</span>
-                        <p>داشتن بازدید و لایک بالا در فیسبوک، می تواند برای افرادی که در این شبکه اجتماعی فعال هستند، جزو مواردی باشد که اعتبار پیج را افزایش می دهد که این امر، توسط تیم نهال آی تی ، برایتان فراهم شده است</p>
+                        <img src={FaceBookLogo} alt="faceBook" className='w-20 2xl:w-48'/>
+                        <span className='2xl:text-5xl'>خدمات فیسبوک</span>
+                        <p className='span'>داشتن بازدید و لایک بالا در فیسبوک، می تواند برای افرادی که در این شبکه اجتماعی فعال هستند، جزو مواردی باشد که اعتبار پیج را افزایش می دهد که این امر، توسط تیم نهال آی تی ، برایتان فراهم شده است</p>
                     </motion.div>
                     <motion.div className='flex flex-col gap-3 items-center' whileInView={{x:[1000,0]}} transition={{duration:2,delay:1}} viewport={{once:true}}>
-                        <img src={aparat} alt="aparat" className='w-20'/>
-                        <span>خدمات آپارات</span>
-                        <p>هر چه ویدیوهای یک کاربر از بازدید بالاتری برخوردار باشد، اعتبار بیشتری نزد کاربران و بازدیدکنندگان یافته و تاثیر بیشتری در ذهن آنان می گذارد که این امر، توسط تیم نهال آی تی ، برایتان فراهم شده است.</p>
+                        <img src={aparat} alt="aparat" className='w-20 2xl:w-48'/>
+                        <span className='2xl:text-5xl'>خدمات آپارات</span>
+                        <p className='span'>هر چه ویدیوهای یک کاربر از بازدید بالاتری برخوردار باشد، اعتبار بیشتری نزد کاربران و بازدیدکنندگان یافته و تاثیر بیشتری در ذهن آنان می گذارد که این امر، توسط تیم نهال آی تی ، برایتان فراهم شده است.</p>
                     </motion.div>
                 </div>
             </div>
             <motion.div className='flex flex-col items-center' whileInView={{x:[1000,0]}} transition={{duration:2,delay:2}} viewport={{once:true}}>
-                <img src={youtube} alt="youtube" className='w-52' />
+                <img src={youtube} alt="youtube" className='w-52 2xl:w-1/5' />
                 <div className='flex flex-col items-center gap-3'>
-                    <b>خدمات یوتیوب</b>
+                    <b className='2xl:text-5xl'>خدمات یوتیوب</b>
                     <div>
-                    <p className='text-center px-3 text-gray-77 leading-8'>یوتیوب معتبرترین سایت جهان در زمینه اشتراک ویدیو محسوب می شود و بسیاری از کاربران اینترنت از سراسر جهان، ویدیوهای خود را در آن به اشتراک گذاشته و از آن کسب درآمد می کنند. یکی از شروط لازم برای کسب درآمد از یوتیوب این است که ویدیوهای کانال شما حداقل 4 هزار ساعت بازدید داشته باشند. ما در تیم نهال آی تی به شما کمک میکنیم تا به کسب درامد برسید.</p>
+                    <p className='text-center px-3 span text-gray-77 leading-8'>یوتیوب معتبرترین سایت جهان در زمینه اشتراک ویدیو محسوب می شود و بسیاری از کاربران اینترنت از سراسر جهان، ویدیوهای خود را در آن به اشتراک گذاشته و از آن کسب درآمد می کنند. یکی از شروط لازم برای کسب درآمد از یوتیوب این است که ویدیوهای کانال شما حداقل 4 هزار ساعت بازدید داشته باشند. ما در تیم نهال آی تی به شما کمک میکنیم تا به کسب درامد برسید.</p>
                     </div>
                 </div>
             </motion.div>
             <div>
-                <h6 className='text-gray-66 text-center'>تعرفه خدمات شبکه های اجتماعی تیم نهال آی تی</h6>
-                <div className='flex flex-row justify-between'>
-                    <img src={tarrif_1} alt="tarrif" className='w-80'/>
-                    <img src={tarrif_2} alt="tarrif" className='w-80'/>
-                    <img src={tarrif_3} alt="tariff" className='w-80'/>
+                <h6 className='text-gray-66 text-center 2xl:mt-20'>تعرفه خدمات شبکه های اجتماعی تیم نهال آی تی</h6>
+                <div className='flex flex-col sm:gap-0 gap-5 items-center sm:flex-row justify-between'>
+                    <img src={tarrif_1} alt="tarrif" className='w-64 md:w-80 2xl:w-2/6'/>
+                    <img src={tarrif_2} alt="tarrif" className='w-64 md:w-80 2xl:w-2/6'/>
+                    <img src={tarrif_3} alt="tariff" className='w-64 md:w-80 2xl:w-2/6'/>
                 </div>
             </div>
         </div>
-        <motion.div className='flex flex-row items-center bg-green-d5 px-1 py-5' whileInView={{y:[200,0],opacity:[0,1]}} transition={{duration:1.5,delay:0.5}} viewport={{once:true}}>
+        <motion.div className='flex flex-row items-center end-box bg-green-d5 py-5' whileInView={{y:[200,0],opacity:[0,1]}} transition={{duration:1.5,delay:0.5}} viewport={{once:true}}>
                  <div className='flex flex-col items-end gap-5'>
             <span className='text-xl leading-10 font-thin text-gray-66 text-center'>جهت سفارش انواع خدمات شبکه های اجتماعی، میتوانید به صورت رایگان ، با شماره <b>09927674217</b> تماس بگیرید و یا از طریق لینک زیر اقدام کنید.</span>
             <button className='text-white hover:brightness-105 transition-all bg-green-57C w-11/12 py-2 rounded-md text-sm'>سفارش پروژه شبکه های اجتماعی</button>

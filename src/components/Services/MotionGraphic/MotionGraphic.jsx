@@ -14,8 +14,8 @@ import front_2 from '../../../assets/img/SaleReadyTemplate/خدمات-کامپی
 function MotionGraphic() {
   return (
     <div className='motionGraphic-content flex flex-col items-center gap-10 mb-10 mt-2'>
+         <img src={HeadImg} alt="header" className='w-full sm:h-auto h-96'/>
         <div className='flex flex-col gap-6 px-1'>
-            <img src={HeadImg} alt="header" />
             <div>
                 <motion.h1 whileInView={{y:[-50,0],opacity:[0,1]}} transition={{duration:1.5}} viewport={{once:true}} className='text-green-137 text-center'>موشن گرافیک یا موشن گرافی چیست؟</motion.h1>
                 <motion.p  whileInView={{x:[1000,0],opacity:[0,1]}} transition={{duration:1.5}} viewport={{once:true}}>متحرک سازی تصاویر و صداگذاری روی آنها را موشن گرافیک می گویند. به عبارت دیگر وکتورهای تصاویر انیمیشنی را با نرم افزارهای گرافیکی براساس سناریو خاص، متحرک سازی انجام می دهند و سپس صداگذاری توسط گوینده روی موشن گرافیک انجام می شود تا مفاهیم بصورت کامل منتقل شود.</motion.p>
@@ -43,39 +43,39 @@ function MotionGraphic() {
             <div>
                 <motion.h5 whileInView={{y:[-50,0],opacity:[0,1]}} transition={{duration:1.5}} viewport={{once:true}} className='text-green-137'>انواع موشن گرافیک</motion.h5>
             </div>
-            <div className='flex flex-row gap-20'>
+            <div className='flex flex-col-reverse items-center sm:flex-row gap-20'>
                 <div>
                     <motion.h6 whileInView={{y:[-100,0],opacity:[0,1]}} transition={{duration:2}} viewport={{once:true}} className='text-green-137'>1. موشن گرافیک:</motion.h6>
                     <motion.p whileInView={{x:[1000,0],opacity:[0,1]}} transition={{duration:1.5}} viewport={{once:true}}>عمده ترین موشن گرافیک هایی که می بینید و استفاده می شود این دسته می باشد. در این نوع موشن گرافیک ها متحرک سازی تصاویر و وکتور انجام می شود و سپس صداگذاری انجام می گیرد. مطمئنا چون صدا دارد جذابیت بیشتری برای مخاطب دارد و انتقال مفاهیم بهتر انجام می شود.</motion.p>
                     <motion.p whileInView={{x:[1000,0],opacity:[0,1]}} transition={{duration:1.5}} viewport={{once:true}}>هرچند اصطلاح موشن گرافیک برای همه گرافیک‌های متحرک شامل تصاویر و ویدئو به کار می‌رود، اما به طور خاص در موشن گرافیک ، به جای تصاویر واقعی، از وکتور یا نقاشی‌هایی استفاده می‌شود که به کمک نرم‌افزارهایی مانند ایلاستریتور تهیه و متحرک سازی می‌شوند. همان‌طور که پیش‌تر اشاره شد این تصاویر متحرک یک سناریو ویژه دارند و پیام کلی آن توسط یک گوینده بر روی تصاویر بیان می‌شود.</motion.p>
                 </div>
-                <motion.img src={Imge_1} alt="walet" whileInView={{x:[-700,0],opacity:[0,1]}} transition={{duration:1}} viewport={{once:true}}/>
+                <motion.img src={Imge_1} alt="walet" className='motionImg' whileInView={{x:[-700,0],opacity:[0,1]}} transition={{duration:1}} viewport={{once:true}}/>
             </div>
-            <div className='flex flex-row gap-20'>
+            <div className='flex flex-col-reverse items-center sm:flex-row gap-20'>
                 <div>
                     <motion.h6 whileInView={{y:[-50,0],opacity:[0,1]}} transition={{duration:1.5}} viewport={{once:true}} className='text-green-137'>2. ویدئو موشن:</motion.h6>
                     <motion.p whileInView={{x:[1000,0],opacity:[0,1]}} transition={{duration:1.5}} viewport={{once:true}}>این دسته از موشن گرافیک ها تلفیقی از فیلمبرداری واقعی و گرافیک است و قسمت هایی از فیلم که قابلیت فیلمبرداری واقعی ندارند با گرافیک اجرا می شوند.</motion.p>
                     <motion.p whileInView={{x:[1000,0],opacity:[0,1]}} transition={{duration:1.5}} viewport={{once:true}}>در حال حاضر هيچ تعريف مشخصي براي موشن گرافيك در دنيا وجود ندارد، با اين حال تقريبا به محتواي كه در آن از تصاوير ساخته شده استفاده شده باشد موشن گرافيک مي گويند. دقت كنيد كه موشن گرافيك حتي شامل محتواهايي مي شود كه علاوه بر تصاوير ساختگي، تصاوير واقعي هم دارند. البته كلمه موشن گرافيك تقريبا به زمان اختراع كامپيوتر ها بر مي گردد كه نشان مي دهد اين تصاوير ساختگي مختص كامپيوتر هستند كه اين يعني با فيلم گرفتن از دفتر نقاشي خود ويدئو موشن نساخته ايد! </motion.p>
                 </div>
-                <motion.img src={Imge_2} alt="video-motion" className='w-96' whileInView={{x:[-700,0],opacity:[0,1]}} transition={{duration:1}} viewport={{once:true}}/>
+                <motion.img src={Imge_2} alt="video-motion" className='w-96 motionImg' whileInView={{x:[-700,0],opacity:[0,1]}} transition={{duration:1}} viewport={{once:true}}/>
             </div>
-            <div className='flex flex-row gap-20'>
+            <div className='flex flex-col-reverse items-center sm:flex-row gap-20'>
                 <div>
                     <motion.h6 whileInView={{y:[-50,0],opacity:[0,1]}} transition={{duration:1.5}} viewport={{once:true}} className='text-green-137'>3. استاپ موشن:</motion.h6>
                     <motion.p whileInView={{x:[1000,0],opacity:[0,1]}} transition={{duration:1.5}} viewport={{once:true}}>به طور کلی همه انیمیشن‌ها از قرار گرفتن چند تصویر به صورت پشت سر هم و پی در پی، ساخته می‌شوند. در انیمیشن‌های دو بعدی، تصاویر نقاشی شده با دست یا کامپیوتر، فریم به فریم نشان داده می‌شوند و در انیمیشن‌های سه بعدی، مدل‌های کامپیوتری به آهستگی حرکت کرده و با گرفتن عکس‌های پشت سر هم از آن‌ها، یک تصویر متحرک تشکیل می‌شود.</motion.p>
                     <motion.p whileInView={{x:[1000,0],opacity:[0,1]}} transition={{duration:1.5}} viewport={{once:true}}>در ساخت انیمیشن به روش استاپ موشن یا Stop Motion ، به جای استفاده از نقاشی، از عروسک‌ها و مدل‌های واقعی استفاده می‌شود. این کار به این صورت انجام می‌شود که عروسک را کمی حرکت می‌دهند، سپس از آن عکس گرفته می‌شود و آنقدر این عمل را تکرار می‌کنند تا حرکت تصویر را به بیننده القا کنند.</motion.p>
                 </div>
-                <motion.img src={Imge_3} alt="animation" className='h-80 w-2/5' whileInView={{x:[-700,0],opacity:[0,1]}} transition={{duration:1}} viewport={{once:true}}/>
+                <motion.img src={Imge_3} alt="stopmotion" className='sm:h-80 w-full sm:w-2/5 h-60 ' whileInView={{x:[-700,0],opacity:[0,1]}} transition={{duration:1}} viewport={{once:true}}/>
             </div>
-            <div className='flex flex-row gap-20'>
+            <div className='flex flex-col-reverse items-center sm:flex-row gap-20'>
                 <div>
                     <motion.h6 whileInView={{y:[-50,0],opacity:[0,1]}} transition={{duration:1}} viewport={{once:true}} className='text-green-137'>4. اینفو موشن:</motion.h6>
                     <motion.p whileInView={{x:[1000,0],opacity:[0,1]}} transition={{duration:1}} viewport={{once:true}}>ابتدا اینفوگرافیک رسم می شود و حالا حرکت را به گونه ای وارد اینفوگرافیک می کنیم تا مراحل را نشان دهیم.</motion.p>
                     <motion.p whileInView={{x:[1000,0],opacity:[0,1]}} transition={{duration:1}} viewport={{once:true}}>یکی از مباحث مهم گرافیک، طراحی اینفوگرافیک یا Infographic Design است. در دنیای امروز که با سرعت زیادی رو به جلو حرکت می‌کند، روزانه آمار و اطلاعات زیادی در مورد موضوعات مختلف، به وجود می‌آید. از طرف دیگر مشغله خوانندگان و کاربران به قدری زیاد است که فرصت مطالعه دقیق این آمار را ندارند؛ به همین دلیل طراحان گرافیک با استفاده از تخصص و خلاقیت خود توانسته‌اند تا با طراحی اینفوگرافیک، این اطلاعات و آمار را به شیوه‌ای زیبا و جذاب به نمایش درآورند. بسیاری از افراد و سخنوران از اینفوگرافیک، در کنفرانس‌ها، ارائه‌های علمی، تبلیغات شرکت‌ها و… استفاده می‌کنند.</motion.p>
                 </div>
-                <motion.img src={Imge_4} alt="infoMation" className='w-96' whileInView={{x:[-700,0],opacity:[0,1]}} transition={{duration:1}} viewport={{once:true}}/>
+                <motion.img src={Imge_4} alt="infoMation" className='w-96 motionImg' whileInView={{x:[-700,0],opacity:[0,1]}} transition={{duration:1}} viewport={{once:true}}/>
             </div>
-            <div className='flex flex-row justify-between'>
+            <div className='flex flex-col-reverse items-center sm:flex-row justify-between'>
                 <div>
                     <motion.h6 whileInView={{x:[500,0],opacity:[0,1]}} transition={{duration:1}} viewport={{once:true}}  className='text-green-137'>مراحل تولید موشن گرافیک:</motion.h6>
                     <motion.p whileInView={{x:[1000,0],opacity:[0,1]}} transition={{duration:1,delay:0.5}} viewport={{once:true}}>1.  ابتدا سناریو یا استوری برد برای شما نگارش می شود و از شما تایید گرفته می شود</motion.p>
@@ -90,18 +90,18 @@ function MotionGraphic() {
                     <motion.p whileInView={{x:[1000,0],opacity:[0,1]}} transition={{duration:1,delay:1}} viewport={{once:true}}>5. در بازاریابی شبکه های اجتماعی بسیار به شما کمک می کند.</motion.p>
                     <motion.p whileInView={{x:[1000,0],opacity:[0,1]}} transition={{duration:1,delay:1}} viewport={{once:true}}>6. کیفیت آموزش را بسیار بالا می برد.</motion.p>
                 </div>
-                <motion.img src={Imge_5} alt="tarrif" className='w-2/4' whileInView={{x:[-700,0],opacity:[0,1]}} transition={{duration:1}} viewport={{once:true}}/>
+                <motion.img src={Imge_5} alt="tarrifImg" className='sm:w-2/4 w-full' whileInView={{x:[-700,0],opacity:[0,1]}} transition={{duration:1}} viewport={{once:true}}/>
             </div>
         </div>
         <div className='flex flex-col w-full'>
-            <motion.div  whileInView={{y:[300,0],opacity:[0,1]}} transition={{duration:1.5}} viewport={{once:true}} className='flex flex-row items-center bg-green-d5 px-1 py-5'>
+            <motion.div  whileInView={{y:[300,0],opacity:[0,1]}} transition={{duration:1.5}} viewport={{once:true}} className='flex flex-row end-box items-center bg-green-d5 px-1 py-5'>
               <div className='flex flex-col items-end gap-5'>
                <span className='text-xl leading-10 font-thin text-gray-66 text-center'>جهت سفارش انواع پروژه طراحی موشن گرافیک ، میتوانید به صورت رایگان ، با شماره <b className='text-gray3030 font-bold'>09927674217</b> تماس بگیرید و یا از طریق لینک زیر اقدام کنید.</span>
                <button className='text-white hover:brightness-105 transition-all bg-green-57C w-11/12 py-2 rounded-md text-sm'>سفارش پروژه موشن گرافیک</button>
             </div>
               <img src={front_1} alt="front" className='w-80'/>
             </motion.div>
-            <motion.div  whileInView={{y:[200,0],opacity:[0,1]}} transition={{duration:1.5,delay:0.5}} viewport={{once:true}} className='flex flex-row-reverse items-center bg-green-72 px-2 py-10'>
+            <motion.div  whileInView={{y:[200,0],opacity:[0,1]}} transition={{duration:1.5,delay:0.5}} viewport={{once:true}} className='flex end-box flex-row-reverse items-center bg-green-72 px-2 py-10'>
             <div className='flex flex-col items-start gap-5'>
             <span className='text-xl leading-10 font-thin text-gray-66 text-center'>جهت مشاهده نمونه کارهای موشن گرافیک  توسط تیم نهال آی تی از طریق لینک زیر اقدام کنید</span>
             <button className='text-white bg-green-57C w-11/12 py-2 rounded-md text-sm hover:brightness-105 transition-all'>مشاهده نمونه کار موشن گرافیک</button>

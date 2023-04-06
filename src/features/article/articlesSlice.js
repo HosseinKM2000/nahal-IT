@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { articles } from "../API/data";
+import { articles } from "../../API/data";
 import { toast } from "react-toastify";
 
 const initialState =

@@ -1,13 +1,8 @@
-.Seo-content > div > h1,h2,h3,h4,h5,h6
+.Seo-content > div > h1,h2,h3,h4,h5,h6و
+.Seo-content > div > div > h1,h2,h3,h4,h5,h6,
+.Seo-content > div > div > div > h1,h2,h3,h4,h5,h6
 {
     font-weight: bolder;
-    font-size: 1.9rem;
-    margin-bottom: 1rem;
-}
-.Seo-content > div > div > h1,h2,h3,h4,h5,h6
-{
-    font-weight: bolder;
-    font-size: 1.9rem;
     margin-bottom: 1rem;
 }
 .Seo-content > div
@@ -15,33 +10,14 @@
     margin-right: 0.5rem;
     margin-left: 0.5rem;
 }
-.Seo-content > div > p
-{
-    font-size:0.9rem;
-    color: #636363;
-    text-align: right;
-    line-height: 2.1rem;
-} 
-.Seo-content > div > div > p
-{
-    font-size:0.9rem;
-    color: #636363;
-    text-align: right;
-    line-height: 2.1rem;
-} 
+.Seo-content > div > p,
+.Seo-content > div > div > p,
 .Seo-content > div > div > div > p
 {
     font-size:0.9rem;
     color: #636363;
-    text-align: right;
     line-height: 2.1rem;
-}
-.Seo-content > div > div > div > h1,h2,h3,h4,h5,h6
-{
-    font-weight: bolder;
-    font-size: 1.9rem;
-    margin-bottom: 1rem;
-}
+} 
 .Seo-content
 {
     direction: rtl;
@@ -52,4 +28,77 @@ b
     color: #404040;
     font-weight: bolder;
     font-family: IranSans-b;
+}
+
+
+
+/* media query */
+
+@media (max-width:640px)
+{
+    .Seo-content > div > h1,h2,h3,h4,h5,h6,
+    .Seo-content > div > div > h1,h2,h3,h4,h5,h6,
+    .Seo-content > div > div > div > h1,h2,h3,h4,h5,h6
+    {
+        text-align: center;
+        font-size: 1.2rem !important;
+    }
+    .Seo-content > div > p,
+    .Seo-content > div > div > p,
+    .Seo-content > div > div > div > p
+    {
+        text-align: center;
+        line-height: 2rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width:640px)
+{
+    .Seo-content > div > h1,h2,h3,h4,h5,h6,
+    .Seo-content > div > div > h1,h2,h3,h4,h5,h6,
+    .Seo-content > div > div > div > h1,h2,h3,h4,h5,h6
+    {
+        font-size: 1.9rem;
+    }
+    .Seo-content > div > p,
+    .Seo-content > div > div > p,
+    .Seo-content > div > div > div > p
+    {
+        text-align: right;
+        font-size:0.9rem;
+        line-height: 2.1rem;
+    }
+    .store-text
+    {
+        width: 100%;
+    }
+    .service-text
+    {
+        width: 100%;
+    }
+}
+
+
+@media (min-width:1536px)
+{
+    .Seo-content > div > h1,h2,h3,h4,h5,h6,
+    .Seo-content > div > div > h1,h2,h3,h4,h5,h6,
+    .Seo-content > div > div > div > h1,h2,h3,h4,h5,h6
+    {
+        text-align: right;
+        font-size: 4rem !important;
+    }
+    .Seo-content > div > p,
+    .Seo-content > div > div > p,
+    .Seo-content > div > div > div > p
+    {
+        text-align: right;
+        line-height: 6rem;
+        font-size: 2.5rem;
+    }  
+    .h-45
+    {
+    height: 45rem;
+    }
 }

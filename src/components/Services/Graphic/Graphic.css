@@ -1,13 +1,8 @@
-.Graphic-content > div > h1,h2,h3,h4,h5,h6
+.Graphic-content > div > h1,h2,h3,h4,h5,h6,
+.Graphic-content > div > div > h1,h2,h3,h4,h5,h6,
+.Graphic-content > div > div > div > h1,h2,h3,h4,h5,h6
 {
     font-weight: bolder;
-    font-size: 1.9rem;
-    margin-bottom: 1rem;
-}
-.Graphic-content > div > div > h1,h2,h3,h4,h5,h6
-{
-    font-weight: bolder;
-    font-size: 1.9rem;
     margin-bottom: 1rem;
 }
 .Graphic-content > div
@@ -15,33 +10,13 @@
     margin-right: 0.5rem;
     margin-left: 0.5rem;
 }
-.Graphic-content > div > p
-{
-    font-size:0.9rem;
-    color: #636363;
-    text-align: right;
-    line-height: 2.1rem;
-} 
-.Graphic-content > div > div > p
-{
-    font-size:0.9rem;
-    color: #636363;
-    text-align: right;
-    line-height: 2.1rem;
-} 
+.Graphic-content > div > p,
+.Graphic-content > div > div > p,
 .Graphic-content > div > div > div > p
 {
-    font-size:0.9rem;
     color: #636363;
-    text-align: right;
     line-height: 2.1rem;
-}
-.Graphic-content > div > div > div > h1,h2,h3,h4,h5,h6
-{
-    font-weight: bolder;
-    font-size: 1.9rem;
-    margin-bottom: 1rem;
-}
+} 
 .Graphic-content
 {
     direction: rtl;
@@ -71,4 +46,83 @@ b
 img[alt='characterIcon']
 {
     width: 8rem !important;
+}
+
+/* media query */
+
+@media (max-width:640px)
+{
+    .Graphic-content > div > h1,h2,h3,h4,h5,h6,
+    .Graphic-content > div > div > h1,h2,h3,h4,h5,h6,
+    .Graphic-content > div > div > div > h1,h2,h3,h4,h5,h6
+    {
+        text-align: center;
+        font-size: 1.2rem !important;
+    }
+    .Graphic-content > div > p,
+    .Graphic-content > div > div > p,
+    .Graphic-content > div > div > div > p
+    {
+        text-align: center;
+        line-height: 2rem;
+        font-size: 0.9rem;
+    }
+    .graphic-services > div 
+    {
+        width: 100% ;
+    }
+}
+
+@media (min-width:640px)
+{
+    .Graphic-content > div > h1,h2,h3,h4,h5,h6,
+    .Graphic-content > div > div > h1,h2,h3,h4,h5,h6,
+    .Graphic-content > div > div > div > h1,h2,h3,h4,h5,h6
+    {
+        font-size: 1.9rem;
+    }
+    .Graphic-content > div > p,
+    .Graphic-content > div > div > p,
+    .Graphic-content > div > div > div > p
+    {
+        text-align: right;
+        font-size:0.9rem;
+        line-height: 2.1rem;
+    }
+}
+
+
+@media (min-width:1536px)
+{
+    .Graphic-content > div > h1,h2,h3,h4,h5,h6,
+    .Graphic-content > div > div > h1,h2,h3,h4,h5,h6,
+    .Graphic-content > div > div > div > h1,h2,h3,h4,h5,h6
+    {
+        text-align: right;
+        font-size: 4rem !important;
+    }
+    .Graphic-content > div > p,
+    .Graphic-content > div > div > p,
+    .Graphic-content > div > div > div > p
+    {
+        text-align: right;
+        line-height: 6rem;
+        font-size: 2.5rem;
+    } 
+    .graphic-services > div > p
+    {
+        font-size: 2.5rem;
+    }
+    .graphic-services > div > b
+    {
+        font-size: 3rem;
+    } 
+    .graphic-services > div > img
+    {
+        width: 30rem;
+    }
+    img[alt='characterIcon']
+    {
+        width: 20rem !important;
+    }
 }

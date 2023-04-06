@@ -16,6 +16,7 @@ import MobileApplication from './components/Services/MobileApplication/MobileApp
 import PremierEditing from './components/Services/PremierEditing/PremierEditing';
 import SoundEditing from './components/Services/SoundEditing/SoundEditing';
 import ContactUs from './components/ContactUs/ContactUs';
+import News from './components/News/News';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <Route element={<PremierEditing/>} path='/services/خدمات-پریمیر-تدوین-فیلم'/>
         <Route element={<SoundEditing/>} path='/services/خدمات-تدوین-صدا-و-صدا-گذاری'/>
         <Route element={<ContactUs/>} path='/contact'/>
+        <Route element={<News/>} path='/news'/>
       </Routes>
     </div>
   );
