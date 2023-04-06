@@ -6,6 +6,7 @@ const initialState =
     news : [],
     loading:false,
     error:null,
+    number:null,
 }
 
 const newsSlice = createSlice({
@@ -26,7 +27,16 @@ const newsSlice = createSlice({
             state.loading = false;
             state.error = 'data not received'
         })
+        .addCase(setPageQuery , (state,action) => {
+            state.number = action.payload
+        })
+    },
+    reducers : {
+        setPageQuery : (state,action) => {
+            state.number = action.payload
+        }
     }
 })
 
+export const {setPageQuery} = newsSlice.actions;
 export default newsSlice.reducer;

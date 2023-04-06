@@ -1,0 +1,14 @@
+.Loading-box > div
+{
+    width: 5%;
+}
+.Loading-box
+{
+    animation: load 1.5s ease-out infinite;
+}
+@keyframes load {
+    0%{gap: 2rem; width: 50%; height: 0.5rem;opacity:0.5;}
+    30%{gap:0rem; width: 20rem; height: 5rem;opacity: 1;}
+    80%{gap:0rem; width: 20rem; height: 5rem;opacity: 1;}
+    100%{gap: 2rem; width: 50%; height: 0.5rem;opacity:0.5;}
+}

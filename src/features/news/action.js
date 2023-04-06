@@ -1,4 +1,4 @@
-import { createAsyncThunk } from "@reduxjs/toolkit";
+import { createAsyncThunk , createSlice} from "@reduxjs/toolkit";
 
 export const getAllNews = createAsyncThunk('news/getAllNews', async () => {
 

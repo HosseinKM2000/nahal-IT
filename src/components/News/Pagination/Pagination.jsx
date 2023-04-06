@@ -2,12 +2,19 @@ import React from 'react';
 import './Pagination.css';
 import ReactPaginate from 'react-paginate';
 import { useState } from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector , useDispatch} from 'react-redux';
+import { useSearchParams  , useNavigate} from 'react-router-dom';
 import NewsPages from '../NewsPages/NewsPages';
+
+import { setPageQuery } from '../../../features/news/newsSlice';
 
 function Pagination() {
 
     const [itemOffset, setItemOffset] = useState(0);
+    const [params] = useSearchParams()
+    const [numberOfPage] = useState(params.get('page'))
+    const dispatch = useDispatch();
+    const navigate = useNavigate()
     const mobile = window.innerWidth <= 425 ? true : false;
     const itemsPerPage = 12;
     const news = useSelector(state => state.news.news);
@@ -21,11 +28,12 @@ function Pagination() {
     const handlePageClick = (event) => {
       const newOffset = (event.selected * itemsPerPage) % news.length;
       console.log(
-        `User requested page number ${event.selected}, which is offset ${newOffset}`
+        `User requested page number ${event.selected+1}, which is offset ${newOffset}`
       );
+      dispatch(setPageQuery(event.selected+1))
+      navigate(`/news?page=${event.selected+1}`)
       setItemOffset(newOffset);
     };
-    console.log(window.innerWidth)
 
 
   return (

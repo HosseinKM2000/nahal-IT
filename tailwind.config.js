@@ -48,7 +48,8 @@ module.exports = {
       'green-08A' : '#08A824',
       'gray-4444' : '#444444',
       'gray-bbbb' : '#bbbbbb',
-      'gray-b1b1' : '#b1b1b1;'
+      'gray-b1b1' : '#b1b1b1;',
+      'green-teal' : '#159895'
     },
   },
   plugins: [],

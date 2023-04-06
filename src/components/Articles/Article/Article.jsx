@@ -35,12 +35,11 @@ import Comments from './Comments/Comments';
 const Article = () => {
 
   const [params] = useSearchParams();
-  const [title] = useState(params.get('name'));
+  const title = useState(params.get('name'));
   const articles = useSelector(state => state.articles.articles);
   const goalArticle = useSelector(state => state.articles.goalArticle);
   const shortLink = useSelector(state => state.articles.shortLink);
   const mobile = window.innerWidth <= 425 ? true : false;
-  console.log(mobile)
   const dispatch = useDispatch();
   useEffect(()=> {
     dispatch(foundArticle(title))
